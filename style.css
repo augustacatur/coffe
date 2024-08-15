@@ -1,0 +1,399 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:'robot',sans-serif;
+    
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 70px;
+    position: absolute; 
+    z-index: 1;
+    
+}
+.logo a{
+    font-size: 30px;
+    color:blueviolet;
+
+}
+.logo a span{
+    color: white
+}
+ul{
+    display: flex;
+}
+li a{
+    margin: 5px 20px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 10px;
+}
+ a:hover{
+    color: blueviolet;
+ }
+ .content{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    background-image:
+     linear-gradient(to bottom right,rgba(96,76,76, .6),rgba(96,76,76, .6)),
+    url("coffebg.jpeg");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+ }
+ .content h2 {
+    font-size: 32px;
+    padding: 5px;
+    color: white;
+
+ }
+ .content p {
+    font-size: 22px;
+ }
+/* menu */
+.menu {
+    background-color: #333333;
+    width: 100%;
+}
+.menu-header {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-header h3 {
+    color: blueviolet;
+    padding: 10px 30px;
+}
+.menu-header h4 {
+    color: blueviolet;
+    padding: 10px 30px;
+}
+.menu-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: #404040;
+}
+  .menu .menu-content  .hot-coffes, .cold-coffes, .manual-coffes {
+        width: 250px;
+        
+        
+}
+.hot-coffes-image img{
+    border-radius: 50%;
+    width: 250px;
+    padding: 4px;
+}
+.cold-coffes-image img{
+    border-radius: 50%;
+    width: 250px;
+}
+.manual-coffes-image img{
+    border-radius: 50%;
+    width: 250px;
+    padding: 4px;
+}
+.menu .menu-content  .hot-coffes, .cold-coffes, .manual-coffes-body {
+    text-align: center;
+    margin-top: 10px;
+}
+.menu-content h2{
+     color: blueviolet;
+
+}
+.menu-content label{
+    margin-top: 10 px;
+    color:white;
+}
+.shop{
+    background-color: #333333;
+    width: 100%;
+}
+
+.shop-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shop-header h3 {
+    color: blueviolet;
+    padding: 10px 30px;
+}
+.shop-header h4 {
+    color: blueviolet;
+    padding: 10px 20px;
+}
+.shop-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #404040;
+    padding: 10px 20px;
+    flex-wrap:wrap;
+}
+.shop-box .card{
+    width: 400px;
+    padding: 70px;
+    
+}
+.card-image{
+    width: 100%;
+    height: 150px;
+    display: flex;
+}
+.shop-box .card-image img :hover{
+    transform: scale(1.1);
+}
+.card-body{
+    padding: 10px;
+    color: white;
+}
+.card-body h3{
+    padding: 10px 0;
+}
+.card-body i{
+    color: yellow;
+    font-size: 10px;
+    position: relative;
+}
+.card-body .cash{
+    font-size: 22px;
+    margin-left: 90px;
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: 2px solid #333333;
+}
+.contact-box{
+    flex: 1;
+}
+.contact-image, .contact-body{
+    height: 100%;
+}
+.contact-img{
+    width: 100%;
+    height: 100%;
+}
+.contact-image img{
+    opacity: .9;
+}
+.contact-body { 
+    background-color: #404040;
+    height: 100%;
+    border-left: 2px solid #333333;
+}
+.contact-body form{
+    padding: 50px 40px;
+    box-sizing: border-box;
+}
+.contact-body h1{
+    color:blueviolet;
+}
+form .form-content{
+    position: relative;
+    margin: 30px 0;
+    border-bottom: 2px solid lightgray;
+}
+form .form-content input{
+    width: 100%;
+    height: 40px;
+    padding: 0px 5px;
+    font-size: 17px;
+    border: none;
+    background: none;
+    outline: none;
+    color: rgb(253, 250, 250);
+}
+form .form-content label{
+    position: absolute;
+    top: 50px;
+    left: 5px;
+    color: white;
+    transform: translate(-50%);
+    font-size: 17px;
+    transition: .5s;
+    pointer-events: none;
+}
+form .form-content span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: blueviolet;
+    transform: .4s;
+}
+form .form-content input:focus~label,
+form .form-content input:valid~label{
+    top: -5px;
+    color: blueviolet(18, 18, 19);
+}
+form .form-content input:focus~span ::before,
+form .form-content input:Valid~span ::before{
+    width: 100%;
+}
+.contact-body form button{
+    padding: 10px 20px;
+    font-size: 17px;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    border: 5px;
+    cursor: pointer;
+    transition: all .4s ease-in;
+}
+
+.contact-body form button:hover{
+    background-color: #141414;
+}
+.footer{
+    background-color: #404040;
+    border-top: 2px solid#333333;
+}
+.footer-box{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.social-media a{
+    color: white;
+    background-color: #333333;
+    border-radius: 50%;
+    font-size: 17px;
+    padding: 10px;
+    margin: 5px;
+}
+.copyright{
+    color: white;
+    font-size: 20px;
+}
+.social-media a :hover{
+    opacity: .7;
+    transition: .5s all ease-in-out;
+}
+.brand{
+    color:blueviolet;
+    font-size: 20px;
+}
+.brand span{
+    color: white;
+}
+
+@media(max-width:780px){
+    header{
+        flex-direction: column;
+        height: 150px;
+        background: linear-gradient(rgba(0,0,0,.2)),rgba(0,0,0,.2)
+    }
+    .menu-header .logo a {
+        font-size: 25px;
+    }
+    .menu-header nav ul li a{
+        font-size: 36px;
+        flex-direction: column;
+        /* display: inline-block; */
+        margin-top: 10px;
+    }
+    /* header nav{
+        display: flex;
+        flex-direction: column;
+    } */
+    .menu-content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content h2{
+        font-size: 28px;
+    }
+    .content p{
+        font-size: 18px;
+    }
+    .contact-image img{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media(max-width:950px){
+    .contact .contact-box{
+        flex: 100%;
+    }
+
+}
+/* @media(max-width:800px){
+.menu .menu-content .hot-coffes,
+.cold-coffes,
+.manual-coffes{
+    margin: 20px;
+}
+}
+@media(max-width:700px){
+    .footer .footer-box .social-media a {
+        color: white;
+        background-color: #333333;
+        border-radius: 50%;
+        font-size: 16px;
+        padding: 5px;
+    }
+    .footer .footer-box .copyright{
+        color: white;
+        font-size: 15px;
+    }
+    .footer .footer-box .brand{
+        color: white;
+        font-size: 18px;
+    }
+}
+@media(max-width:500px){
+
+    header{
+        height:130px;
+
+    }
+    header .logo a{
+        font-size: 23px;
+    }
+    header nav ul li a{
+        font-size: 13px;
+        flex-direction: column;
+        display: inline-block;
+        margin-top: 10px;
+    }
+    header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    .content h2{
+        font-size: 23px;
+    }
+    .content p{
+        font-size: 16px;
+    }
+}
+
+
+
+ */

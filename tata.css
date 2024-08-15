@@ -1,0 +1,34 @@
+*,html{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    text-decoration: none;
+    list-style: none;
+    font-family:'robot',sans-serif;
+
+}
+header{  
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+    
+}
+.logo{
+    
+    
+    justify-content: space-between;
+
+}
+ul{ 
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+li{
+    padding: 5px;
+}
